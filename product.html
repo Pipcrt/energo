@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- slider product -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Страница товара</title>
+
+    <style>
+        .container-slider-product {
+            position: relative;
+            height: 500px;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            border: 1px solid black;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mySwiper2 {
+            height: 80%;
+            width: 100%;
+        }
+
+        .mySwiper {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+        .mySwiper .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .mySwiper .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 50%;
+            height: 50%;
+            object-fit: contain;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar d-flex justify-content-between navbar-expand-lg navbar-light ">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="index.html"><img src="image/Логотип.png" alt=""></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                            style="font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 400; color: black;"
+                                            href="index.html">Главная</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                            style="font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 400; color: black;"
+                                            href="catalog.html">Каталог</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                            style="font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 400; color: black;"
+                                            href="#">Контакты</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                            style="font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 400; color: black;"
+                                            href="#">О нас</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex">
+                                    <input class="form-control icon"
+                                        style="border-radius: 0px; border: 1px solid #ACACAC; width: 300px; height: 30px; padding-right: 25px; background: url('../image/search_icon.png') no-repeat right; background-size: 20px; font-size: 14px;"
+                                        placeholder="Поиск по каталогу" aria-label="Search">
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fon_image mb-5">
+        <div class="container h-100">
+            <div class="row h-100 justify-content-end align-items-center">
+                <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-xs-10 block_title bg1" style="padding: 80px;">
+                    <h2 class="color2 ff">Гарантия качества и надежности</h2>
+                    <p class="color2 ff mt-2" style=" font-weight: 200;">Наше оборудование самое надежное и проверенное
+                        временем
+                    </p>
+                    <img class="mt-5" src="image/Arrow1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12  container-slider-product ">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                        class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="image/product_catalog.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/product_catalog.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/product_catalog.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/product_catalog.png">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="image/product_catalog.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/product_catalog.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/product_catalog.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/product_catalog.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/product_catalog.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 container-info-product mt-4 px-5">
+                    <h3 class="title-page-product">ФК5.5-8рВ(IP54)</h3>
+                    <div class="d-flex mt-5">
+                        <h4 class="price_product">1 979$</h4>
+                        <button type="button" class="btn btn-primary btn-sm ms-5 mb-1" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" data-whatever="@mdo">Оформить заказ</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Message:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Send message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-4">
+                        <button class="btn btn-primary btn-sm " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample1" aria-expanded="true"  aria-controls="collapseExample">
+                            Характеристики
+                        </button>
+                        <button class="btn btn-primary btn-sm ms-5" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                            Описание
+                        </button>
+                    </p>
+                    <div class="collapse show me-5 mt-1 mb-1" id="collapseExample1">
+                        <div class="card card-body col-md-12">
+                            <div class="d-flex">
+                                <div>
+                                    <ul class="fs-6" style="list-style: none;">
+                                        <li>Бренд:</li>
+                                        <li>Производительность:</li>
+                                        <li>Давление:</li>
+                                        <li>Мощность:</li>
+                                        <li>Страна производства:</li>
+                                        <li>Тип привода:</li>
+                                        <li>На ресивере:</li>
+                                        <li>Гарантия:</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="fs-6" style="list-style: none; color: #274c77; font-weight: 500;">
+                                        <li>Феникс</li>
+                                        <li>700 л/мин</li>
+                                        <li>8 бар</li>
+                                        <li>5.5 кВт</li>
+                                        <li>КНР</li>
+                                        <li>Ременной</li>
+                                        <li>без ресивера</li>
+                                        <li>24 месяца</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse ms-5 me-2" id="collapseExample2">
+                        <div class="card card-body">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit sunt maxime
+                            voluptate odio earum quidem porro natus perspiciatis sequi maiores accusantium repellat
+                            consequatur, voluptatum esse asperiores iure exercitationem, quaerat laudantium numquam
+                            velit nisi. Nemo, labore. Quibusdam distinctio id unde deserunt officiis voluptate, omnis,
+                            incidunt eos fugit repellat tempora, blanditiis vel.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer bg1">
+        <div class="container-fluid">
+            <div class="row row_footer mx-auto">
+                <div class="container_footer">
+                    <div class="logo_footer_cont">
+                        <img src="image/logo_white.png" alt="">
+                    </div>
+                    <div class="navigation_footer">
+                        <ul class="ul_footer">
+                            <li class="li_footer"><a href="index.html" class="a_footer">Главная</a></li>
+                            <li class="li_footer"><a href="catalog.html" class="a_footer">Каталог</a></li>
+                            <li class="li_footer"><a href="" class="a_footer">Контакты</a></li>
+                            <li class="li_footer"><a href="" class="a_footer">О нас</a></li>
+                        </ul>
+                    </div>
+                    <div class="container_tel_footer">
+                        <a href="" class="link_tel">+7 172 264 55 55</a>
+                        <button class="btn_tel">Заказать звонок</button>
+                        <a href="" class="link_footer_up">
+                            <img src="image/upper_arrow.png" alt="" class="img_arrow_footer">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
