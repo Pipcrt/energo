@@ -337,9 +337,8 @@ body {
 
 
 /* project.html */
-.real_project {
-}
-.slider_real_project{
+
+.slider_real_project {
     position: relative;
     height: 400px;
 }
@@ -517,3 +516,100 @@ body {
     /*  */
 
 }
+
+
+
+/* стилизация bootstrap */
+.btn {
+    background-color: #274C77;
+    border: #274C77;
+    border-radius: 0;
+    box-shadow: none;
+}
+.btn .collapsed{
+    box-shadow: none;
+}
+
+.btn .collapse{
+    box-shadow: none;
+}
+.btn:focus {
+    box-shadow: none;
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+/* стили фильтра(аккордион) */
+.accordion-button {
+    background-color: #ffffff;
+    color: black;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    background-color: #ffffff;
+    color: black;
+    border: #274C77;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #ffffff;
+    color: black;
+}
+
+
+
+.form-check-input:checked {
+    background-color: black;
+    border-color: black;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+    border-color: black;
+}
+
+/* стили фильтра(аккордион) */
+
+
+/* пагинация */
+.page-item {
+    background-color: #ffffff;
+}
+
+.page-link {
+    border-radius: 0;
+    color: black;
+}
+
+.page-link:focus {
+    border-radius: 0;
+    color: black;
+}
+
+.page-link:hover {
+    background-color: #274C77;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.page-link:not(.page-item) {
+    box-shadow: none;
+}
+
+/* пагинация */
+
+/* страница товара */
+.card {
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+/* страница товара */
+
+/* стилизация bootstrap */
