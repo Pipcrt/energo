@@ -349,7 +349,8 @@ body {
 /* product.html */
 /* product.html */
 
-
+/* about.html */
+/* about.html */
 
 
 
@@ -448,6 +449,15 @@ body {
     /* footer */
 }
 
+@media (max-width: 1200px) {
+    .info_about_block {
+        margin-top: 40px;
+    }
+    .block_image_about_left{
+        padding: 40px;
+    }
+}
+
 @media (max-width: 990px) {
 
     /*  */
@@ -526,13 +536,15 @@ body {
     border-radius: 0;
     box-shadow: none;
 }
-.btn .collapsed{
+
+.btn .collapsed {
     box-shadow: none;
 }
 
-.btn .collapse{
+.btn .collapse {
     box-shadow: none;
 }
+
 .btn:focus {
     box-shadow: none;
 }
@@ -610,6 +622,7 @@ body {
 .card {
     border: 1px solid rgba(0, 0, 0, .125);
 }
+
 /* страница товара */
 
 /* стилизация bootstrap */
