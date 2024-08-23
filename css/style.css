@@ -352,7 +352,13 @@ body {
 /* about.html */
 /* about.html */
 
-
+/* contact.html */
+.image_contact_page{
+    background: url('../image/contact_image.jpg') no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+/* contact.html */
 
 /* meadia */
 
